@@ -59,3 +59,52 @@ This phase serves as the communication bridge, guaranteeing that the final produ
 
 * **Shared Vision:** It forces all stakeholders—clients, users, and the development team—to agree on a **single, shared vision** of the final product, preventing a scenario where the delivered product is technically sound but fails to meet the user's practical needs.
 * **Foundation for Testing:** The requirements are the definitive criteria against which the final product will be measured. Good requirements are **testable and measurable**, allowing Quality Assurance (QA) teams to write effective test plans and validate that the system is built *correctly* and *meets its intended purpose*.
+
+
+
+## 5 Key Activities in Requirements AnalysisThe 
+
+
+### 1. Requirement Gathering (Elicitation) 🤝
+
+* **Note:** As mentioned above, **Requirement Gathering** is generally considered synonymous with **Requirement Elicitation** in modern practice, referring to the entire process of sourcing information from stakeholders.
+* **In a Sequential View:** If used as a distinct step, it refers solely to the activity of collecting or acquiring raw data, serving as the necessary precursor to **Analysis**. The techniques (interviews, brainstorming) focus on communication and discovery.
+
+***
+
+### 2. Requirement Elicitation 🗣️
+
+* **What It Is:** This is the initial and most fundamental activity of actively **discovering, drawing out, and obtaining** the needs and constraints from all project stakeholders.
+* **Relationship to Gathering:** In many contexts, **Requirement Elicitation** and **Requirement Gathering** are used interchangeably, both referring to the process of harvesting raw information.
+* **Techniques:** This activity involves direct communication and investigative work using methods like interviews, surveys, workshops (JAD sessions), brainstorming, prototyping, and observing users.
+* **Goal:** To fully understand the business context and the stakeholders' desires, ensuring nothing is missed.
+
+***
+
+### 3. Requirement Analysis and Modeling 🔍
+
+* **What It Is:** This is the intellectual process of **examining, interpreting, and refining** the raw information collected during elicitation. It moves the project from "what is wanted" to "what will be built."
+* **Analysis Focus:** The core goal is to check requirements for quality characteristics: **consistency** (no contradictions), **completeness** (nothing missing), **clarity** (no ambiguity), and **feasibility** (technically and economically achievable).
+* **Modeling:** Analysts use visual tools and formal techniques (like Data Flow Diagrams, Use Cases, User Stories, or process models) to represent the requirements. This helps resolve conflicts and confirms a shared understanding of the system's behavior and structure.
+* **Outcome:** A single, non-conflicting, and prioritized set of requirements.
+
+***
+
+### 4. Requirement Documentation 📝
+
+* **What It Is:** The process of formally writing down the analyzed and agreed-upon requirements in an organized and standardized format.
+* **The SRS:** The primary output is the **Software Requirements Specification (SRS)** document. This formal document serves as the official contract between the client and the development team.
+* **Content:** Requirements are categorized as **Functional** (what the system must *do*) and **Non-Functional** (the system's qualities, such as performance, security, and usability).
+* **Quality:** Documentation ensures each requirement is **measurable, testable, and traceable**.
+
+***
+
+### 5. Requirement Validation ✅
+
+* **What It Is:** The final review process to ensure that the documented requirements truly meet the stakeholders' original intent and will lead to a system that **solves the actual business problem**.
+* **Focus:** It answers the question, "Are we building the **right** product?" (as opposed to Verification, which checks if we are building the product *right*).
+* **Activities:** This involves formal inspections, peer reviews, walkthroughs with stakeholders, and sometimes creating quick prototypes to confirm user interface or workflow satisfaction.
+* **Outcome:** A formal **sign-off** from all key stakeholders, establishing the requirements baseline and officially approving the project scope.
+
+***
+
