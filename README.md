@@ -62,7 +62,7 @@ This phase serves as the communication bridge, guaranteeing that the final produ
 
 
 
-## 5 Key Activities in Requirements AnalysisThe 
+## Key Activities in Requirements Analysis
 
 
 ### 1. Requirement Gathering (Elicitation) 🤝
