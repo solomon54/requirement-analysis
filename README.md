@@ -112,3 +112,17 @@ Non-Functional requirements define the quality attributes and constraints of the
 - **Reliability and Availability**: The system shall achieve 99.9% uptime, using database replication (master-slave) and messaging queues like Kafka to ensure data consistency and fault tolerance during failures.
 - **Security**: The system shall protect user data with encryption for payments and compliance with standards like GDPR, including secure authentication to prevent unauthorized access to booking details.
 - **Usability**: The system shall provide an intuitive interface accessible on mobile and web, with features like responsive design and accessibility support for diverse users.
+
+## Use Case Diagrams
+
+Use Case Diagrams are a core element of the Unified Modeling Language (UML) used in requirements analysis to visualize the interactions between users (actors) and the system's functionalities (use cases). They provide a high-level overview of the system's behavior from an external perspective, focusing on what the system does without specifying how it does it, making them essential for the ALX Booking System to align stakeholders on user flows like booking rooms and managing listings.
+
+- **Requirements Clarification**: They capture user goals and system responses, reducing ambiguity in features such as customer search queries or admin approvals, ensuring all parties understand expected behaviors upfront.
+- **Stakeholder Communication**: The visual format bridges technical and non-technical teams, facilitating discussions on actor roles (e.g., Customer, Hotel Manager) and use case relationships like "include" or "extend" for payment processing.
+- **System Scope Definition**: They delineate boundaries by listing primary actors and use cases, preventing scope creep in high-volume scenarios like concurrent bookings during peak seasons.
+- **Early Validation and Iteration**: By mapping interactions (e.g., notifications extending bookings), potential gaps or redundancies are identified early, supporting agile refinements for usability and reliability.
+- **Foundation for Detailed Design**: They serve as a blueprint for subsequent artifacts like sequence or activity diagrams, guiding implementation of scalable features such as real-time availability updates.
+
+#### Use Case Diagram
+
+<image-card alt="ALX Booking System Use Case Diagram" src="alx-booking-uc.png" ></image-card>
