@@ -125,4 +125,32 @@ Use Case Diagrams are a core element of the Unified Modeling Language (UML) used
 
 #### Use Case Diagram
 
-<image-card alt="ALX Booking System Use Case Diagram" src="alx-booking-uc.png" ></image-card>
+<image alt="ALX Booking System Use Case Diagram" src="alx-booking-uc.png" ></image>
+
+## Acceptance Criteria
+
+### The Importance of Acceptance Criteria in Requirement Analysis
+
+Acceptance Criteria (AC) are formal, written statements defining the necessary conditions that a software product or feature must satisfy to be accepted by a user, customer, or stakeholder. In the realm of Requirement Analysis, ACs are crucial for several reasons:
+
+1. **Defining the "Done" State**: They provide the single source of truth for determining when a specific requirement, user story, or feature is truly complete and ready for release. Without clear ACs, development teams risk working based on assumptions, leading to scope creep and rework.
+
+2. **Reducing Ambiguity**: Requirements are often written in plain language and can be open to interpretation. ACs translate these general needs into specific, testable, binary (yes/no) conditions. This aligns the expectations of the business (what they want) and the developers (what they build).
+3. **Facilitating Testing**: ACs form the foundation of testing efforts. Quality Assurance (QA) teams use these exact criteria to write test cases. If all acceptance criteria pass their tests, the feature is ready.
+4. **Enabling Estimation**: By quantifying the requirements, ACs help development teams create more accurate estimates for the time and resources needed to implement a feature. A requirement with vague ACs is impossible to estimate reliably.
+
+In short, Acceptance Criteria transform vague business needs into actionable, measurable, and testable goals.
+
+### Example of Acceptance Criteria: Booking System Checkout Feature
+
+For a hotel booking management system, the "Checkout Feature" is critical. It must reliably process payment and confirm the final reservation.
+
+**User Story**: As a hotel guest, I want to review my booking details and complete the payment so that my room is successfully reserved.
+
+| Component/Condition        | Acceptance Criteria (AC)                                                                                                                                                                                                                                                                           |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Payment Success**        | GIVEN the user inputs valid credit card information, WHEN they click "Pay Now," THEN a successful payment confirmation page must be displayed within 3 seconds.                                                                                                                                    |
+| **Payment Failure**        | GIVEN the user inputs invalid/expired payment information, WHEN they click "Pay Now," THEN an error message stating "Payment failed. Please check your details or try another card" must appear, and the user must remain on the payment page.                                                     |
+| **Inventory/Availability** | GIVEN the selected room type becomes unavailable during the checkout process (e.g., due to another simultaneous booking), WHEN the user attempts to confirm, THEN a clear message "Room is no longer available. Please select a different room or date" must be displayed, and the process halted. |
+| **Confirmation Email**     | GIVEN payment is successful, WHEN the booking is confirmed, THEN an automated confirmation email containing the reservation number, check-in/out dates, and total amount paid must be sent to the user's registered email address.                                                                 |
+| **Input Validation**       | GIVEN the credit card number field, WHEN the user inputs text or less than 13 digits, THEN the "Pay Now" button must remain disabled.                                                                                                                                                              |
