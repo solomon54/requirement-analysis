@@ -61,7 +61,7 @@ This phase serves as the communication bridge, guaranteeing that the final produ
 - **Shared Vision:** It forces all stakeholders—clients, users, and the development team—to agree on a **single, shared vision** of the final product, preventing a scenario where the delivered product is technically sound but fails to meet the user's practical needs.
 - **Foundation for Testing:** The requirements are the definitive criteria against which the final product will be measured. Good requirements are **testable and measurable**, allowing Quality Assurance (QA) teams to write effective test plans and validate that the system is built _correctly_ and _meets its intended purpose_.
 
-## Key Activities in Requirement Analysis modify the section
+## Key Activities in Requirement Analysis
 
 Requirement Analysis is a critical phase in the software development lifecycle, ensuring that the project meets stakeholder needs and expectations. The following are the five key activities involved in this process:
 
@@ -88,3 +88,27 @@ Requirement Analysis is a critical phase in the software development lifecycle, 
 - **Requirement Validation**:
   - Ensures that the documented requirements accurately reflect stakeholder needs and are feasible, complete, and testable through reviews, walkthroughs, or prototyping.
   - Confirms that the requirements align with project goals and can serve as a basis for successful implementation.
+
+## Types of Requirements
+
+In the context of the booking management project, which involves designing a scalable hotel booking application similar to Airbnb or OYO, requirements are categorized into functional and non-functional types. This section defines each type and provides examples tailored to the project's features, such as hotel management, customer search and booking, notifications, and data analytics.
+
+### Functional Requirements
+
+Functional requirements specify the exact behaviors and functionalities that the system must provide to users. They describe what the system should do, focusing on inputs, processes, and outputs for core workflows like searching, booking, and managing hotels.
+
+- **User Authentication and Registration**: The system shall allow customers to register with email or social login and authenticate securely to access personalized features like booking history.
+- **Hotel Search and Filtering**: The system shall enable customers to search for hotels by criteria such as location, dates, price range, and amenities, retrieving results from an Elasticsearch-indexed database.
+- **Booking Creation and Management**: The system shall allow customers to select a hotel, specify guest details and dates, process payments via integrated third-party gateways, and confirm bookings with unique reservation IDs stored in the booking database.
+- **Hotel Management for Managers**: The system shall provide a portal for hotel managers to add, update, or delete hotel listings, including details like availability, pricing, and images, which are then synced to a CDN for distribution.
+- **Notification Delivery**: The system shall send real-time notifications (e.g., email or push) to customers upon booking confirmation and to managers for new reservations or cancellations.
+
+### Non-Functional Requirements
+
+Non-Functional requirements define the quality attributes and constraints of the system, such as performance, security, and usability. They ensure the system operates efficiently and reliably under various conditions in the high-traffic hotel booking environment.
+
+- **Performance**: The system shall respond to search queries within 200 milliseconds by leveraging Redis caching for recent data and Elasticsearch for indexed searches.
+- **Scalability**: The system shall handle up to 10,000 concurrent users by employing a microservices architecture with horizontal scaling via load balancers and containerized services.
+- **Reliability and Availability**: The system shall achieve 99.9% uptime, using database replication (master-slave) and messaging queues like Kafka to ensure data consistency and fault tolerance during failures.
+- **Security**: The system shall protect user data with encryption for payments and compliance with standards like GDPR, including secure authentication to prevent unauthorized access to booking details.
+- **Usability**: The system shall provide an intuitive interface accessible on mobile and web, with features like responsive design and accessibility support for diverse users.
